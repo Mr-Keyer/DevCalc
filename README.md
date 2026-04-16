@@ -1,4 +1,4 @@
-##DevCalc
+# DevCalc
 
 DevCalc is a small Python script designed to quickly convert numbers between different numerical bases directly from the terminal.
 
