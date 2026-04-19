@@ -42,4 +42,4 @@ if __name__ == '__main__':
                 print("Escolha invalida.")
 
         except ValueError:
-            print("Dgite apenas numeros inteiros: ")
+            print("Digite apenas numeros inteiros: ")
