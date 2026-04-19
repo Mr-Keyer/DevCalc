@@ -1,9 +1,23 @@
-print("=" * 50)
-print("CALCUADORA DO PROGRAMADOR")
-print("=" * 50)
+import os
 
+
+#Estetica
+CIANO = "\033[96m"
+VERDE = "\033[92m"
+RESET = "\033[0m"
+BOLD  = "\033[1m"
+
+arte = f"""{CIANO}{BOLD}
+██████╗ ███████╗██╗   ██╗ ██████╗ █████╗ ██╗      ██████╗
+██╔══██╗██╔════╝██║   ██║██╔════╝██╔══██╗██║     ██╔════╝
+██║  ██║█████╗  ██║   ██║██║     ███████║██║     ██║
+██║  ██║██╔══╝  ╚██╗ ██╔╝██║     ██╔══██║██║     ██║
+██████╔╝███████╗ ╚████╔╝ ╚██████╗██║  ██║███████╗╚██████╗
+╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝
+{RESET}"""
+
+#Funcionalidades
 def com_prefixo(num):
-    print(f"Decimal: {num}")
     print(f"Binário: {bin(num)}")
     print(f"Octal: {oct(num)}")
     print(f"Hexadecimal: {hex(num)}")
@@ -18,6 +32,8 @@ def sem_prefixo(num):
 if __name__ == '__main__':
 
     while True:
+        os.system('clear')
+        print(arte)
         print("\n1 - Com prefixo.")
         print("2 - Sem prefixo.")
         print("3 - Sair.")
