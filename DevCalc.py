@@ -46,16 +46,19 @@ if __name__ == '__main__':
             if op == "1":
                 num = int(input("\nInsira o numero para ver:\nO binario.\nOctal.\nHexadecimal.\nDecimal.\nInserir o numero:\n "))
                 com_prefixo(num)
+                input("\nPressione Enter para continuar...")
 
             elif  op == "2":
                 num = int(input("\nInsira o numero para ver:\nO binario.\nOctal.\nHexadecimal.\nDecimal.\nInserir o numero:\n "))
                 sem_prefixo(num)
+                input("\nPressione Enter para continuar...")
 
             elif op == "3":
                 print("Saindo...")
                 break 
             else:
                 print("Escolha invalida.")
+                input("\nPressione Enter para continuar...")
 
         except ValueError:
             print("Digite apenas numeros inteiros: ")
