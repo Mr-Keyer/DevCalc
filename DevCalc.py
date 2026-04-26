@@ -62,3 +62,4 @@ if __name__ == '__main__':
 
         except ValueError:
             print("Digite apenas numeros inteiros: ")
+            input("\nPressione Enter para continuar...")
